@@ -1,0 +1,384 @@
+/* body {
+  background-color: lightgray !important;
+} */
+
+
+.app {
+  /* display: flex; */
+  justify-content: center;
+}
+
+.container {
+  width: 1024px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* LOGIN & REGISTER */
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #b9e7e7;
+}
+
+.auth h1 {
+  font-size: 20px;
+  color: teal;
+  margin-bottom: 20px;
+}
+
+.auth form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: white;
+  width: 200px;
+  gap: 20px;
+}
+
+.auth form input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.auth form button {
+  padding: 10px;
+  border: none;
+  background-color: teal;
+  cursor: pointer;
+  color: white;
+}
+
+.auth form p {
+  font-size: 12px;
+  color: red;
+  text-align: center;
+}
+
+.auth form span {
+  font-size: 12px;
+  text-align: center;
+}
+
+/* NAVBAR */
+.navbar .container {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .container .logo img {
+  width: 120px;
+}
+
+.navbar .container .links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar .container .links h6 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.navbar .container .links span {
+  cursor: pointer;
+}
+
+.navbar .container .links .write {
+  background-color: #b9e7e7;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  border: 1px solid white;
+}
+
+.navbar .container .links .write:hover {
+  color: teal;
+  background-color: white;
+  border: 1px solid teal;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #b9e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+footer img {
+  height: 50px;
+}
+
+/* HOME */
+.home .posts {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+
+.post {
+  display: flex;
+  gap: 100px;
+}
+
+.post:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.post .img {
+  flex: 2;
+  position: relative;
+}
+
+.post .img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #b9e7e7; 
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  z-index: -1;
+}
+
+.post .img img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.post .content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.post .content h1 {
+  font-size: 48px;
+}
+
+.post .content p {
+  font-size: 18px;
+}
+
+.post .content button {
+  width: max-content;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid teal;
+  color: teal;
+}
+
+.post .content button:hover {
+  border: 1px solid white;
+  background-color: #b9e7e7;
+  color: black;
+}
+
+/* SINGLE POST */
+.single {
+  display: flex;
+  gap: 50px;
+}
+
+.single .content {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.single .content img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.single .content .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.single .content .user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.single .content .user span {
+  font-weight: bold;
+}
+
+.single .content .edit {
+  display: flex;
+  gap: 5px;
+}
+
+.single .content .edit img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.single .content h1 {
+  font-size: 42px;
+  color: #333;
+}
+
+.single .content p {
+  text-align: justify;
+  line-height: 30px;
+}
+
+.single .menu {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.single .menu h1 {
+  font-size: 20px;
+  color: #555;
+}
+
+.single .menu .post {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.single .menu .post img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.single .menu .post h2 {
+  color: #555;
+}
+
+.single .menu .post button {
+  width: max-content;
+  padding: 7.5px 15px;
+  border: none;
+  cursor: pointer;
+  color: teal;
+  background-color: white;
+  border: 1px solid teal;
+}
+
+.single .menu .post button:hover {
+  border: 1px solid white;
+  background-color: lightgreen;
+  color: black;
+}
+
+
+
+/* WRITE PAGE */
+.add {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.editorContainer {
+  min-height: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.item h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.file {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.buttons button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.buttons button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.cat {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
